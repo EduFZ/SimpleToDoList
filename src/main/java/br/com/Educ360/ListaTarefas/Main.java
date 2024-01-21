@@ -1,6 +1,7 @@
 package br.com.Educ360.ListaTarefas;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -54,18 +55,28 @@ public class Main {
                 case 2:
                     System.out.println("Digite o id da tarefa para remover: ");
                     int idRemove = scanner.nextInt();
+                    System.out.println("Tem certeza que deseja remover a Tarefa " + idRemove + " ?(S / N)");
+                    String next = scanner.next();
                     int sizeList = listaTarefas.size();
 
-                    listaTarefas.removeIf(tarefa -> tarefa.getId() == idRemove);
+                    if (next.equals("S") || next.equals("s")) {
+                        listaTarefas.removeIf(tarefa -> tarefa.getId() == idRemove);
 
-                    if (listaTarefas.size() < sizeList){
-                        System.out.println("Tarefa Removida com sucesso");
-                    } else {
-                        System.out.println("Tarefa com ID " + idRemove + " não encontrada.");
+                        if (listaTarefas.size() < sizeList) {
+                            System.out.println("Tarefa Removida com sucesso");
+                        } else {
+                            System.out.println("Tarefa com ID " + idRemove + " não encontrada.");
+                        }
                     }
                     break;
                 case 5:
-                    //Criar método Listar Tarefas em Ordem Alfabética
+                    listaTarefas.sort(Tarefas.COMPARATOR_BY_NOME);
+                    System.out.println(listaTarefas);
+                    break;
+                case 6:
+                    listaTarefas.sort(Tarefas.COMPARATOR_BY_ID);
+                    System.out.println(listaTarefas);
+                    break;
 
             }
         }

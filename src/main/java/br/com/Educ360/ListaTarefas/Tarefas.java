@@ -1,6 +1,8 @@
 package br.com.Educ360.ListaTarefas;
 
-public class Tarefas {
+import java.util.Comparator;
+
+public class Tarefas{
     private static int nextId = 0;
 
     private int id;
@@ -45,4 +47,8 @@ public class Tarefas {
                 ", descricaoTarefa='" + descricaoTarefa + '\'' +
                 '}';
     }
+
+    public static final Comparator<Tarefas> COMPARATOR_BY_NOME = Comparator.comparing(Tarefas::getNomeTarefa);
+    public static final Comparator<Tarefas> COMPARATOR_BY_ID = Comparator.comparing(Tarefas::getId);
+
 }
