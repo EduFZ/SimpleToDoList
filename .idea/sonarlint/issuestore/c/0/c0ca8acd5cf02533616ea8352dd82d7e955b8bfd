@@ -1,0 +1,15 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯”Ä¶8ßóûÌÒ1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘8®õûÌÒ1
+L	java:S106"+Replace this use of System.out by a logger.(Üú²‹ıÿÿÿÿ8³õûÌÒ1
+T
+java:S6126"2Replace this String concatenation with Text block.(Üú²‹ıÿÿÿÿ8³õûÌÒ1
+G	java:S106"+Replace this use of System.out by a logger.(¿õíğ8´õûÌÒ1
+C	java:S131""Add a default case to this switch.(¿“íÉüÿÿÿÿ8´õûÌÒ1
+L	java:S106""+Replace this use of System.out by a logger.(¸û÷»øÿÿÿÿ8µõûÌÒ1
+G	java:S106("+Replace this use of System.out by a logger.(ƒ²¥š8¶õûÌÒ1
+L	java:S1062"+Replace this use of System.out by a logger.(¤¸¤ûÿÿÿÿ8·õûÌÒ1
+L	java:S1067"+Replace this use of System.out by a logger.(ÅÀû³ıÿÿÿÿ8·õûÌÒ1
+G	java:S106>"+Replace this use of System.out by a logger.(ƒÃ†ù8¹õûÌÒ1
+G	java:S106@"+Replace this use of System.out by a logger.(§çÒ¼8¹õûÌÒ1
